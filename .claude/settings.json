@@ -1,0 +1,22 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(dotnet --info)",
+      "Bash(dotnet build:*)",
+      "Bash(dotnet csharpier:*)",
+      "Bash(dotnet run:*)",
+      "Bash(dotnet test:*)",
+      "Bash(dotnet tool list:*)",
+      "Bash(node:*)",
+      "Bash(yarn add:*)",
+      "Bash(yarn build)",
+      "Bash(yarn install)",
+      "Bash(yarn start:*)",
+      "mcp__linear__*",
+      "mcp__playwright__*"
+    ],
+    "deny": [],
+    "ask": []
+  },
+  "enableAllProjectMcpServers": true
+}
