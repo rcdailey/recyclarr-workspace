@@ -6,7 +6,11 @@ Multi-repo development workspace for the Recyclarr ecosystem.
 
 CLI tool that syncs TRaSH Guides recommendations to Sonarr/Radarr instances.
 
-## Repositories
+## Local Repository Clones
+
+All repositories below are **cloned locally** in this workspace directory. ALWAYS use local file
+tools (Read, Glob, Grep, Bash) to explore them. NEVER use octocode or other remote GitHub tools for
+any repo that exists here.
 
 - recyclarr/ - Main .NET CLI application (primary codebase)
 - wiki/ - Docusaurus documentation site (recyclarr.dev)
