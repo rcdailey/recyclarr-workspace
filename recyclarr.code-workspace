@@ -1,29 +1,26 @@
 {
-	"folders": [
+  "folders": [
     {
       "path": "recyclarr"
-		},
-		{
+    },
+    {
       "path": "wiki"
-		},
-		{
+    },
+    {
       "path": "config-templates"
-		},
-		{
+    },
+    {
       "path": "dev-configs"
-		},
-		{
+    },
+    {
       "path": "guides"
-		},
-		{
+    },
+    {
       "path": "homebrew"
-		},
-		{
-      "path": "../claude-plugins"
-		},
+    },
     {
       "path": "."
     }
-	],
+  ],
   "settings": {}
 }
