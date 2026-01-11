@@ -10,15 +10,17 @@ CLI tool that syncs TRaSH Guides recommendations to Sonarr/Radarr instances.
 
 All repositories below are **cloned locally** in this workspace directory. ALWAYS use local file
 tools (Read, Glob, Grep, Bash) to explore them. NEVER use octocode or other remote GitHub tools for
-any repo that exists here.
+any repo that exists here. Always verify the checked out branch in each repo before you start
+reading work. If the branch is not what you expect, **immediately stop your task** and notify the
+user.
 
-- recyclarr/ - Main .NET CLI application (primary codebase)
-- wiki/ - Docusaurus documentation site (recyclarr.dev)
-- config-templates/ - Official YAML config templates, community-contributed (cloned by recyclarr at
-  runtime)
-- homebrew/ - Homebrew tap for macOS distribution
-- dev-configs/ - Personal development configs (private)
-- guides/ - TRaSH-Guides upstream (external org, read-only reference)
+- `recyclarr/` - Main .NET CLI application (primary codebase)
+- `wiki/` - Docusaurus documentation site (recyclarr.dev)
+- `config-templates/` - Official YAML config templates, community-contributed (cloned by recyclarr
+  at runtime)
+- `homebrew/` - Homebrew tap for macOS distribution
+- `dev-configs/` - Personal development configs (private)
+- `guides/` - TRaSH-Guides upstream (external org, read-only reference)
 
 ## Repo Relationships
 
@@ -26,20 +28,12 @@ any repo that exists here.
 - wiki documents recyclarr (master = recyclarr.dev, next = next.recyclarr.dev for pre-release)
 - homebrew auto-updates on recyclarr releases
 
-## Cross-Repo Workflows
-
-New feature: recyclarr (implement) -> wiki (document) -> config-templates (add examples)
-
-## Workspace Scripts
-
-- clone.sh - Bootstrap/update all repos
-
 ## AI Session Guidance
 
-Each repo has its own CLAUDE.md with repo-specific directives. Defer to those for:
+Each repo has its own AGENTS.md with repo-specific directives. Defer to those for:
 
-- Coding standards (recyclarr/CLAUDE.md)
-- Documentation conventions (wiki/CLAUDE.md)
-- Template structure (config-templates/CLAUDE.md)
+- Coding standards (`recyclarr/AGENTS.md`)
+- Documentation conventions (`wiki/AGENTS.md`)
+- Template structure (`config-templates/AGENTS.md`)
 
 This file provides orientation only - not coding standards or detailed workflows.
