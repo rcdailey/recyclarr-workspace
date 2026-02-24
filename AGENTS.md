@@ -9,7 +9,7 @@ CLI tool that syncs TRaSH Guides recommendations to Sonarr/Radarr instances.
 ## Local Repository Clones
 
 All repositories below are **cloned locally** in this workspace directory. ALWAYS use local file
-tools (Read, Glob, Grep, Bash) to explore them. NEVER use octocode or other remote GitHub tools for
+tools (Read, Glob, Grep, Bash) to explore them. NEVER use gh-scout or other remote GitHub tools for
 any repo that exists here. Always verify the checked out branch in each repo before you start
 reading work. If the branch is not what you expect, **immediately stop your task** and notify the
 user.
@@ -27,6 +27,11 @@ user.
 - recyclarr fetches config-templates and guides as resource providers at runtime
 - wiki documents recyclarr (master = recyclarr.dev, next = next.recyclarr.dev for pre-release)
 - homebrew auto-updates on recyclarr releases
+
+## Development Environment
+
+`RECYCLARR_CONFIG_DIR` is set to `dev-configs/appdata`. When running Recyclarr locally via `dotnet
+run`, it reads settings, configs, custom formats, and state from that directory.
 
 ## AI Session Guidance
 
