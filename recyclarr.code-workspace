@@ -22,5 +22,11 @@
       "path": "."
     }
   ],
-  "settings": {}
+  "settings": {
+    "yaml.customTags": [
+      "!env_var scalar",
+      "!secret scalar",
+      "!file scalar"
+    ]
+  }
 }
