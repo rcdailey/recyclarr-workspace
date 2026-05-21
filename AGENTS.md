@@ -30,8 +30,10 @@ user.
 
 ## Development Environment
 
-`RECYCLARR_CONFIG_DIR` is set to `dev-configs/appdata`. When running Recyclarr locally via `dotnet
-run`, it reads settings, configs, custom formats, and state from that directory.
+Resolve `RECYCLARR_CONFIG_DIR` by running `mise set RECYCLARR_CONFIG_DIR` from the recyclarr
+directory. MUST run this command to obtain the path; MUST NOT hardcode or guess it. When running
+Recyclarr locally via `dotnet run`, it reads settings, configs, custom formats, and state from that
+directory. MUST NOT create or modify files inside the `recyclarr/` repo for dev config purposes.
 
 ## AI Session Guidance
 
