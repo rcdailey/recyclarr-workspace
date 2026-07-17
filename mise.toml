@@ -1,5 +1,5 @@
 [env]
-OPENCODE_CONFIG_DIR = "{{config_root ~ '/.opencode' | canonicalize}}"
+OPENCODE_CONFIG_DIR = "{{ [config_root, '.opencode'] | join_path | canonicalize }}"
 
 [tools]
 act = "latest"
