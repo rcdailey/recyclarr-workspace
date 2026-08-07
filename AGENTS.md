@@ -9,12 +9,14 @@ CLI tool that syncs TRaSH Guides recommendations to Sonarr/Radarr instances.
 ## Local Repository Clones
 
 All repositories below are **cloned locally** in this workspace directory. ALWAYS use local file
-tools (Read, Glob, Grep, Bash) to explore them. NEVER use gh-scout or other remote GitHub tools for
-any repo that exists here. Always verify the checked out branch in each repo before you start
-reading work. If the branch is not what you expect, **immediately stop your task** and notify the
-user.
+tools (Read, Glob, Grep, Bash) to explore them. NEVER use `research scout` or other remote GitHub
+tools for any repo that exists here. Always verify the checked out branch in each repo before you
+start reading work. If the branch is not what you expect, **immediately stop your task** and notify
+the user.
 
 - `recyclarr/` - Main .NET CLI application (primary codebase)
+- `recyclarr.*/` - Git worktrees of `recyclarr/`, one per feature branch. Each carries its own
+  branch-local `AGENTS.md`; MUST NOT reconcile it against another worktree's copy.
 - `wiki/` - Docusaurus documentation site (recyclarr.dev)
 - `config-templates/` - Official YAML config templates, community-contributed (cloned by recyclarr
   at runtime)
