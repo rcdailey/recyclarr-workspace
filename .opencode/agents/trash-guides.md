@@ -1,7 +1,8 @@
 ---
 description: Navigate TRaSH Guides for custom formats, quality profiles, naming, and quality sizes
 mode: subagent
-model: anthropic/claude-haiku-4-5
+model: openai/gpt-5.6-luna
+variant: low
 permission:
   edit: deny
   question: deny
