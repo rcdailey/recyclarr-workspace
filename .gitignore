@@ -4,3 +4,6 @@
 /homebrew/
 /recyclarr/
 /wiki/
+
+# Recyclarr worktrees
+/recyclarr.*/
