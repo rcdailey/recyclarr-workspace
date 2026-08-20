@@ -1,48 +1,29 @@
 # Recyclarr Workspace
 
-Multi-repo development workspace for the Recyclarr ecosystem.
+Multi-repository workspace for the Recyclarr CLI and its supporting resources.
 
-## What is Recyclarr?
+## Repository Boundaries
 
-CLI tool that syncs TRaSH Guides recommendations to Sonarr/Radarr instances.
+- Use local file and Git tools to inspect these clones. MUST NOT substitute GitHub or web research
+  for local repository exploration.
+- Before inspecting a repository, run `git branch --show-current` in it. If the task names or
+  implies another branch, stop and notify the user.
+- Follow each repository's own `AGENTS.md` for work in that repository.
+- Treat `guides/` as a read-only upstream reference.
+- Each `recyclarr.*/` worktree has branch-local instructions. MUST NOT reconcile its `AGENTS.md`
+  with another worktree's copy.
 
-## Local Repository Clones
+## Repository Map
 
-All repositories below are **cloned locally** in this workspace directory. ALWAYS use local file
-tools (Read, Glob, Grep, Bash) to explore them. NEVER use `research scout` or other remote GitHub
-tools for any repo that exists here. Always verify the checked out branch in each repo before you
-start reading work. If the branch is not what you expect, **immediately stop your task** and notify
-the user.
+- `recyclarr/` and `recyclarr.*/`: .NET CLI and feature worktrees
+- `wiki/`: Docusaurus documentation site
+- `config-templates/`: runtime YAML configuration templates
+- `guides/`: upstream TRaSH Guides resources
+- `homebrew/`: macOS distribution tap
+- `dev-configs/`: private development configuration
 
-- `recyclarr/` - Main .NET CLI application (primary codebase)
-- `recyclarr.*/` - Git worktrees of `recyclarr/`, one per feature branch. Each carries its own
-  branch-local `AGENTS.md`; MUST NOT reconcile it against another worktree's copy.
-- `wiki/` - Docusaurus documentation site (recyclarr.dev)
-- `config-templates/` - Official YAML config templates, community-contributed (cloned by recyclarr
-  at runtime)
-- `homebrew/` - Homebrew tap for macOS distribution
-- `dev-configs/` - Personal development configs (private)
-- `guides/` - TRaSH-Guides upstream (external org, read-only reference)
+## Local Runtime Configuration
 
-## Repo Relationships
-
-- recyclarr fetches config-templates and guides as resource providers at runtime
-- wiki documents recyclarr (master = recyclarr.dev, next = next.recyclarr.dev for pre-release)
-- homebrew auto-updates on recyclarr releases
-
-## Development Environment
-
-Resolve `RECYCLARR_CONFIG_DIR` by running `mise set RECYCLARR_CONFIG_DIR` from the recyclarr
-directory. MUST run this command to obtain the path; MUST NOT hardcode or guess it. When running
-Recyclarr locally via `dotnet run`, it reads settings, configs, custom formats, and state from that
-directory. MUST NOT create or modify files inside the `recyclarr/` repo for dev config purposes.
-
-## AI Session Guidance
-
-Each repo has its own AGENTS.md with repo-specific directives. Defer to those for:
-
-- Coding standards (`recyclarr/AGENTS.md`)
-- Documentation conventions (`wiki/AGENTS.md`)
-- Template structure (`config-templates/AGENTS.md`)
-
-This file provides orientation only - not coding standards or detailed workflows.
+When running Recyclarr locally, resolve `RECYCLARR_CONFIG_DIR` by running
+`mise set RECYCLARR_CONFIG_DIR` from that Recyclarr worktree. MUST NOT guess the path or store
+development configuration inside the worktree.
