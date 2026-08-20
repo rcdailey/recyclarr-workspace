@@ -3,5 +3,8 @@
   // OPENCODE_CONFIG_DIR overrides the global AGENTS.md lookup path, so we
   // re-include it explicitly here. Remove when fixed upstream:
   // https://github.com/sst/opencode/issues/28658
-  "instructions": ["~/.config/opencode/AGENTS.md"],
+  "instructions": [
+    "~/.config/opencode/AGENTS.md",
+    "{env:OPENCODE_CONFIG_DIR}/../AGENTS.md",
+  ],
 }
