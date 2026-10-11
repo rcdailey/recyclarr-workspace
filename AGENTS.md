@@ -22,6 +22,10 @@ Multi-repository workspace for the Recyclarr CLI and its supporting resources.
 - `homebrew/`: macOS distribution tap
 - `dev-configs/`: private development configuration
 
+When adding or removing a clone directory, update both root ignore files. `.gitignore` keeps Git
+from committing the clone as an embedded repository; a matching `!` rule in `.ignore` re-includes it
+for OpenCode file search and path completion.
+
 ## Local Runtime Configuration
 
 When running Recyclarr locally, resolve `RECYCLARR_CONFIG_DIR` by running
