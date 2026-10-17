@@ -1,6 +1,6 @@
 # Recyclarr Workspace
 
-Multi-repository workspace for the Recyclarr CLI and its supporting resources.
+Multi-repository workspace for Recyclarr and its supporting resources.
 
 ## Repository Boundaries
 
@@ -15,7 +15,7 @@ Multi-repository workspace for the Recyclarr CLI and its supporting resources.
 
 ## Repository Map
 
-- `recyclarr/` and `recyclarr.*/`: .NET CLI and feature worktrees
+- `recyclarr/` and `recyclarr.*/`: .NET application (main checkout and feature worktrees)
 - `wiki/`: Docusaurus documentation site
 - `config-templates/`: runtime YAML configuration templates
 - `guides/`: upstream TRaSH Guides resources
@@ -30,4 +30,5 @@ for OpenCode file search and path completion.
 
 When running Recyclarr locally, resolve `RECYCLARR_CONFIG_DIR` by running
 `mise set RECYCLARR_CONFIG_DIR` from that Recyclarr worktree. MUST NOT guess the path or store
-development configuration inside the worktree.
+development configuration inside the worktree. Maintainer-only mise values live in the workspace
+root `mise.local.toml`, which every worktree inherits.
