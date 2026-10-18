@@ -4,4 +4,10 @@
 !/homebrew/
 !/recyclarr/
 !/wiki/
+
+!/config-templates.*/
+!/dev-configs.*/
+!/guides.*/
+!/homebrew.*/
 !/recyclarr.*/
+!/wiki.*/

@@ -1,4 +1,8 @@
 {
   "explorer.excludeGitIgnore": true,
-  "search.useIgnoreFiles": true
+  "search.useIgnoreFiles": true,
+  "files.exclude": {
+    "{recyclarr,wiki,config-templates,dev-configs,guides,homebrew}": true,
+    "{recyclarr,wiki,config-templates,dev-configs,guides,homebrew}.*": true
+  }
 }

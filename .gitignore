@@ -1,3 +1,5 @@
+# New components must also be added to both `files.exclude` brace lists in
+# .vscode/settings.json
 /config-templates/
 /dev-configs/
 /guides/
@@ -5,5 +7,10 @@
 /recyclarr/
 /wiki/
 
-# Recyclarr worktrees
+# Worktrees
+/config-templates.*/
+/dev-configs.*/
+/guides.*/
+/homebrew.*/
 /recyclarr.*/
+/wiki.*/

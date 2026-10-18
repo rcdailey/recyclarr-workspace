@@ -22,9 +22,11 @@ Multi-repository workspace for Recyclarr and its supporting resources.
 - `homebrew/`: macOS distribution tap
 - `dev-configs/`: private development configuration
 
-When adding or removing a clone directory, update both root ignore files. `.gitignore` keeps Git
-from committing the clone as an embedded repository; a matching `!` rule in `.ignore` re-includes it
-for OpenCode file search and path completion.
+When adding or removing a component, update its clone and `<component>.*/` worktree rules in both
+root ignore files, plus both `files.exclude` brace lists in `.vscode/settings.json`. `.gitignore`
+keeps Git from committing clones as embedded repositories; matching `!` rules in `.ignore`
+re-include them for OpenCode file search and path completion; `files.exclude` hides them under
+VS Code's root folder, which would otherwise duplicate the workspace folders.
 
 ## Local Runtime Configuration
 
