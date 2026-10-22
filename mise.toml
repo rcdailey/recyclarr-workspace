@@ -1,2 +1,6 @@
+[env]
+LINEAR_CLIENT_ID = "356e0c82210f6ddb8641c5aa96e63b22"
+RECYCLARR_CONFIG_DIR = "{{ [config_root, 'dev-configs', 'appdata'] | join_path | canonicalize }}"
+
 [tools]
 act = "latest"
