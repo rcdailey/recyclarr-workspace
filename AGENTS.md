@@ -42,6 +42,12 @@ VS Code's root folder, which would otherwise duplicate the workspace folders.
   one-task-per-repository default. Fix code findings directly; send wiki findings back to the
   `wiki` session that made the change.
 
+## Private Documentation
+
+Maintainer-only Recyclarr knowledge (user feedback, release procedures, notes that must stay out of
+public repositories) lives in Outline. Load the `private-docs` skill before saving or recalling it;
+search it when user feedback or maintainer history could inform the task.
+
 ## Local Runtime Configuration
 
 When running Recyclarr locally, resolve `RECYCLARR_CONFIG_DIR` by running

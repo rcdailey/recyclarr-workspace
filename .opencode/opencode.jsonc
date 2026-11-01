@@ -1,0 +1,16 @@
+{
+  "$schema": "https://opencode.ai/config.json",
+  // Private docs may use only the Recyclarr collection; see skills/private-docs.
+  "permissions": [
+    { "action": "outline_list_collections", "resource": "*", "effect": "deny" },
+    { "action": "outline_create_collection", "resource": "*", "effect": "deny" },
+    { "action": "outline_update_collection", "resource": "*", "effect": "deny" },
+    { "action": "outline_delete_collection", "resource": "*", "effect": "deny" },
+  ],
+  "mcp": {
+    "outline": {
+      "type": "remote",
+      "url": "https://wiki.dailey.app/mcp"
+    }
+  }
+}
