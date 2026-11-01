@@ -37,10 +37,8 @@ VS Code's root folder, which would otherwise duplicate the workspace folders.
 - For every Recyclarr task, decide whether `wiki/` must change (user-visible behavior, config, CLI,
   environment, defaults, upgrade steps). Include needed changes in the plan or the work, and
   delegate wiki edits to the `wiki` agent.
-- When work changes the wiki, one `acceptance` task started from the Recyclarr worktree covers
-  both repositories; its Context names the wiki path and branch. This overrides the
-  one-task-per-repository default. Fix code findings directly; send wiki findings back to the
-  `wiki` session that made the change.
+- When work changes the wiki, the `acceptance` task's Context names the wiki path and branch. Send
+  wiki findings back to the `wiki` session that made the change.
 
 ## Private Documentation
 
