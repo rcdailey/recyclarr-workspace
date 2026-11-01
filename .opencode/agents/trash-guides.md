@@ -20,6 +20,10 @@ permissions:
   - action: shell
     resource: git branch --show-current
     effect: allow
+  # Callers usually run from a recyclarr.*/ worktree, where guides/ is an external directory.
+  - action: external_directory
+    resource: "*/recyclarr-workspace/guides/*"
+    effect: allow
 ---
 
 # TRaSH Guides Lookup
