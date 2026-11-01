@@ -6,6 +6,8 @@
     { "action": "outline_create_collection", "resource": "*", "effect": "deny" },
     { "action": "outline_update_collection", "resource": "*", "effect": "deny" },
     { "action": "outline_delete_collection", "resource": "*", "effect": "deny" },
+    // Overrides the global ask for every repository under this workspace
+    { "action": "shell", "resource": "*git push*", "effect": "allow" },
   ],
   "mcp": {
     "outline": {
