@@ -21,9 +21,13 @@ permissions:
     effect: allow
   # Subagents start in the caller's directory, where wiki/ is external and its AGENTS.md and
   # .opencode config do not load. Blocking wiki/ file access there forces the session_move first;
-  # after the move wiki/ is internal and this rule no longer matches.
+  # after the move wiki/ is internal and these rules no longer match. session_move requests
+  # `<wiki>/*`, so that resource stays allowed; files directly in wiki/ share it and stay readable.
   - action: external_directory
     resource: "*/recyclarr-workspace/wiki/*"
+    effect: allow
+  - action: external_directory
+    resource: "*/recyclarr-workspace/wiki/*/*"
     effect: deny
 ---
 
