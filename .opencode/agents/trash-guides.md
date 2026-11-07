@@ -3,7 +3,7 @@ description: >-
   Look up local TRaSH Guides data when given a service and question; not for code changes, Git
   history, or web research. Returns cited findings for caller verification.
 mode: subagent
-model: openai/gpt-5.6-luna#low
+model: anthropic/claude-haiku-5-5#low
 permissions:
   - action: "*"
     resource: "*"
