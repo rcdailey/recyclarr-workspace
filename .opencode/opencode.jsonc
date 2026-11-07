@@ -10,9 +10,12 @@
     { "action": "shell", "resource": "*git push*", "effect": "allow" },
   ],
   "mcp": {
-    "outline": {
-      "type": "remote",
-      "url": "https://wiki.dailey.app/mcp"
+    "servers": {
+      "outline": {
+        "type": "remote",
+        "url": "https://wiki.dailey.app/mcp",
+        "pool": true
+      }
     }
   }
 }
